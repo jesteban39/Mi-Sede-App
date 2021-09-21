@@ -1,6 +1,6 @@
 import { } from '../constants'
 import { UPDATE_VENUES_LIST } from '../constants'
-import { item } from '../../types'
+import { item } from '../../@types'
 
 const initialState: item[] = []
 

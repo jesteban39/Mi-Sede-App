@@ -4,7 +4,7 @@ import {
 } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import styles from './styles'
-import { item } from '../types'
+import { item } from '../@types'
 import updateVenues from '../redux/actions/updateVenues'
 
 export default function VenuesList() {
