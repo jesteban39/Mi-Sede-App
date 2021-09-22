@@ -1,12 +1,12 @@
 import axios from 'axios'
 import config from '../../../config.json'
-//import { API_BASE, API_PORT } from '@env';
+import { API_BASE, API_PORT } from '@env';
 import { UPDATE_VENUES_LIST } from '../constants'
 
 export default function updateVenues(jobCode: number){
   return async (dispatch: Function) => {
     //const data = await axios.get(`${API_BASE}:${API_PORT}/${jobCode}`)
-    //console.log(config.API_BASE, API_PORT)
+    console.log(config.API_BASE, API_PORT)
     return dispatch({
       type: UPDATE_VENUES_LIST,
       payload: [

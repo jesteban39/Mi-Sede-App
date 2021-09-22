@@ -1,7 +1,7 @@
 
 export interface aspirant {
   id: string
-  cc: number
+  cc: string
   name: string
   email: string
   score: number

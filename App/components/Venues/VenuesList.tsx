@@ -4,8 +4,8 @@ import {
 } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import styles from './styles'
-import { item } from '../@types'
-import updateVenues from '../redux/actions/updateVenues'
+import { item } from '../../@types'
+import updateVenues from '../../redux/actions/updateVenues'
 
 export default function VenuesList() {
   const dispatch = useDispatch()
@@ -23,12 +23,12 @@ export default function VenuesList() {
   );
 
   return (
-    <SafeAreaView style={styles.list}>
+    <View style={styles.list}>
       <FlatList
         data={venuesList}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
-    </SafeAreaView>
+    </View>
   );
 }
